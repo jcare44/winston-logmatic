@@ -1,0 +1,36 @@
+{
+  "name": "winston-logmatic",
+  "version": "0.1.0",
+  "description": "Winston transport for Logmatic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "github-changes --o jcare44 --r winston-logmatic --token $CHANGELOG_GITHUB_API_TOKEN -f CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcare44/winston-logmatic"
+  },
+  "keywords": [
+    "winston",
+    "logmatic"
+  ],
+  "author": {
+    "name": "Julien Caré",
+    "url": "http://jcare.fr"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcare44/winston-logmatic/issues"
+  },
+  "homepage": "https://github.com/jcare44/winston-logmatic",
+  "dependencies": {
+    "node-logmatic": "^1.0.0"
+  },
+  "peerDependencies": {
+    "winston": "2.x.x"
+  },
+  "devDependencies": {
+    "github-changes": "^1.0.0"
+  }
+}
