@@ -19,9 +19,12 @@ WinstonLogmatic.prototype.name = 'logmatic';
 WinstonLogmatic.prototype.log = function (level, message, meta, callback) {
   var logMessage = {
     level: level,
-    message: message,
     meta: meta
   };
+
+  if (message) {
+    logMessage.message = message;
+  }
 
   this.logmatic.log(logMessage);
   callback();

@@ -1,6 +1,6 @@
 {
   "name": "winston-logmatic",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Winston transport for Logmatic",
   "main": "index.js",
   "scripts": {
