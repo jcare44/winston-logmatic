@@ -17,6 +17,9 @@ util.inherits(WinstonLogmatic, Transport);
 WinstonLogmatic.prototype.name = 'logmatic';
 
 WinstonLogmatic.prototype.log = function (level, message, meta, callback) {
+  if (this.silent) {
+    return callback();
+  }
   var logMessage = {
     level: level,
     meta: meta
